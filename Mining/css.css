@@ -22,7 +22,6 @@
   --leaderboard-scale: 1;
   --safe-margin: 40px;
   --card-shadow: 0 10px 32px rgba(120, 83, 96, 0.15);
-  --card-shadow-hover: 0 12px 40px rgba(120, 83, 96, 0.2);
 }
 
 * {
@@ -63,7 +62,6 @@ html, body {
   transform: scale(var(--widget-scale));
   transform-origin: center;
   will-change: transform, opacity;
-  transition: box-shadow 280ms ease-out;
 }
 
 .card-base.is-active {
@@ -142,29 +140,15 @@ html, body {
   animation: cardFadeIn 280ms ease-out both;
 }
 
-.crystal-mining-widget.position-top-left .mining-notification.is-active,
-.crystal-mining-widget.position-top-right .mining-notification.is-active,
-.crystal-mining-widget.position-bottom-left .mining-notification.is-active,
-.crystal-mining-widget.position-bottom-right .mining-notification.is-active {
-  animation: cardFadeIn 280ms ease-out both;
-}
-
-.crystal-mining-widget.position-top-center .mining-notification.is-active,
-.crystal-mining-widget.position-bottom-center .mining-notification.is-active {
-  animation: cardFadeIn 280ms ease-out both;
-}
-
-.crystal-mining-widget.position-center .mining-notification.is-active {
-  animation: cardFadeIn 280ms ease-out both;
-}
-
 /* Pickaxe Container */
 .pickaxe-container {
-  position: relative;
+  position: absolute;
   width: 100px;
   height: 100px;
   flex: 0 0 100px;
-  margin: 12px 0 8px 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .mining-notification.show-result .pickaxe-container {
@@ -228,6 +212,8 @@ html, body {
   flex-direction: column;
   align-items: center;
   gap: 4px;
+  position: relative;
+  z-index: 10;
 }
 
 .mining-text {
@@ -273,8 +259,8 @@ html, body {
   transform: translateY(8px);
 }
 
-.mining-notification.show-result .ore-display {
-  justify-content: center;
+.mining-notification.is-mining .ore-display {
+  display: none;
 }
 
 .ore-icon {
@@ -319,7 +305,7 @@ html, body {
   visibility: hidden;
   transform: scale(var(--leaderboard-scale));
   transform-origin: top right;
-  will-change: transform, opacity;
+  will-change: opacity;
 }
 
 .leaderboard-container.is-visible {
@@ -405,17 +391,13 @@ html, body {
   display: flex;
   align-items: center;
   gap: 8px;
-  transition: background 260ms ease-out;
-}
-
-.leaderboard-item:hover {
-  background: rgba(242, 201, 214, 0.35);
 }
 
 .leaderboard-item-medal {
   font-size: 14px;
   min-width: 20px;
   text-align: center;
+  flex-shrink: 0;
 }
 
 .leaderboard-item-avatar {
@@ -441,12 +423,14 @@ html, body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  flex-shrink: 1;
 }
 
 .leaderboard-item-score {
   font-weight: 700;
   color: var(--ore-color);
   white-space: nowrap;
+  flex-shrink: 0;
 }
 
 /* ============================================
@@ -458,7 +442,7 @@ html, body {
   padding: 24px;
   opacity: 0;
   visibility: hidden;
-  will-change: transform, opacity;
+  will-change: opacity;
 }
 
 .crystal-mining-widget.position-top-left .leaderboard-popup {
@@ -565,7 +549,7 @@ html, body {
   overflow: hidden;
   opacity: 0;
   visibility: hidden;
-  will-change: transform, opacity;
+  will-change: opacity;
 }
 
 .crystal-mining-widget.position-top-left .miner-profile {
@@ -671,11 +655,6 @@ html, body {
   flex-direction: column;
   align-items: center;
   gap: 6px;
-  transition: background 260ms ease-out;
-}
-
-.profile-stat-card:hover {
-  background: rgba(242, 201, 214, 0.35);
 }
 
 .profile-stat-icon {
