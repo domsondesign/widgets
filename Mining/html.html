@@ -1,0 +1,86 @@
+<div id="crystal-mining-widget" class="crystal-mining-widget">
+  <!-- MINING NOTIFICATION -->
+  <div id="mining-notification" class="mining-notification card-base" aria-live="polite">
+    <div id="pickaxe-container" class="pickaxe-container">
+      <img id="pickaxe-image" class="pickaxe-image" src="" alt="">
+      <img id="impact-effect" class="impact-effect" src="" alt="">
+      <img id="sparkle-effect" class="sparkle-effect" src="" alt="">
+    </div>
+
+    <div id="mining-content" class="mining-content">
+      <div id="mining-text" class="mining-text"></div>
+
+      <div id="mining-result" class="mining-result">
+        <img id="user-avatar" class="user-avatar" src="" alt="">
+        <span id="username-text" class="username-text"></span>
+        <span>mined</span>
+      </div>
+
+      <div id="ore-display" class="ore-display">
+        <img id="ore-icon" class="ore-icon" src="" alt="">
+        <span id="ore-name" class="ore-name"></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PERMANENT LEADERBOARD -->
+  <div id="leaderboard-container" class="leaderboard-container card-base" aria-live="polite">
+    <img id="leaderboard-trophy" class="leaderboard-trophy" src="" alt="">
+    <div id="leaderboard-title" class="leaderboard-title"></div>
+    <ol id="leaderboard-list" class="leaderboard-list"></ol>
+  </div>
+
+  <!-- LEADERBOARD POPUP -->
+  <div id="leaderboard-popup" class="leaderboard-popup card-base" aria-live="polite">
+    <img id="leaderboard-popup-trophy" class="leaderboard-popup-trophy" src="" alt="">
+    <div id="leaderboard-popup-title" class="leaderboard-popup-title"></div>
+    <ol id="leaderboard-popup-list" class="leaderboard-popup-list"></ol>
+  </div>
+
+  <!-- MINER PROFILE CARD -->
+  <div id="miner-profile" class="miner-profile card-base" aria-live="polite">
+    <div class="profile-header">
+      <img id="profile-avatar" class="profile-avatar" src="" alt="">
+      <div id="profile-username" class="profile-username"></div>
+    </div>
+    <div class="profile-body">
+      <div class="profile-stat-grid">
+        <div class="profile-stat-card">
+          <img id="stat-stone-icon" class="profile-stat-icon" src="" alt="">
+          <div class="profile-stat-label">Stone</div>
+          <div id="stat-stone-value" class="profile-stat-value">0</div>
+        </div>
+        <div class="profile-stat-card">
+          <img id="stat-iron-icon" class="profile-stat-icon" src="" alt="">
+          <div class="profile-stat-label">Iron</div>
+          <div id="stat-iron-value" class="profile-stat-value">0</div>
+        </div>
+        <div class="profile-stat-card">
+          <img id="stat-gold-icon" class="profile-stat-icon" src="" alt="">
+          <div class="profile-stat-label">Gold</div>
+          <div id="stat-gold-value" class="profile-stat-value">0</div>
+        </div>
+        <div class="profile-stat-card">
+          <img id="stat-diamond-icon" class="profile-stat-icon" src="" alt="">
+          <div class="profile-stat-label">Diamond</div>
+          <div id="stat-diamond-value" class="profile-stat-value">0</div>
+        </div>
+        <div class="profile-stat-card">
+          <img id="stat-mythril-icon" class="profile-stat-icon" src="" alt="">
+          <div class="profile-stat-label">Mythril</div>
+          <div id="stat-mythril-value" class="profile-stat-value">0</div>
+        </div>
+      </div>
+      <div class="profile-footer">
+        <div class="profile-footer-stat">
+          <div class="profile-footer-label">Total Mined</div>
+          <div id="profile-total-mined" class="profile-footer-value">0</div>
+        </div>
+        <div class="profile-footer-stat">
+          <div class="profile-footer-label">Best Ore</div>
+          <div id="profile-best-ore" class="profile-footer-value">—</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
