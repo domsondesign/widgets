@@ -1,0 +1,392 @@
+{
+  "miningEnabled": {
+    "type": "checkbox",
+    "label": "Mining Enabled",
+    "value": true,
+    "group": "Gameplay"
+  },
+  "cooldown": {
+    "type": "number",
+    "label": "Cooldown",
+    "value": 30,
+    "min": 0,
+    "max": 3600,
+    "step": 1,
+    "group": "Gameplay"
+  },
+  "stoneChance": {
+    "type": "number",
+    "label": "Stone Chance",
+    "value": 55,
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "group": "Gameplay"
+  },
+  "ironChance": {
+    "type": "number",
+    "label": "Iron Chance",
+    "value": 25,
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "group": "Gameplay"
+  },
+  "goldChance": {
+    "type": "number",
+    "label": "Gold Chance",
+    "value": 13,
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "group": "Gameplay"
+  },
+  "diamondChance": {
+    "type": "number",
+    "label": "Diamond Chance",
+    "value": 6,
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "group": "Gameplay"
+  },
+  "mythrilChance": {
+    "type": "number",
+    "label": "Mythril Chance",
+    "value": 1,
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "group": "Gameplay"
+  },
+  "scale": {
+    "type": "slider",
+    "label": "Scale",
+    "value": 100,
+    "min": 1,
+    "max": 100,
+    "step": 1,
+    "group": "Appearance"
+  },
+  "backgroundColor": {
+    "type": "colorpicker",
+    "label": "Background Color",
+    "value": "#fff7fa",
+    "group": "Appearance"
+  },
+  "backgroundOpacity": {
+    "type": "slider",
+    "label": "Background Opacity",
+    "value": 94,
+    "min": 0,
+    "max": 100,
+    "step": 1,
+    "group": "Appearance"
+  },
+  "borderColor": {
+    "type": "colorpicker",
+    "label": "Border Color",
+    "value": "#f2c9d6",
+    "group": "Appearance"
+  },
+  "borderWidth": {
+    "type": "slider",
+    "label": "Border Width",
+    "value": 1,
+    "min": 0,
+    "max": 12,
+    "step": 1,
+    "group": "Appearance"
+  },
+  "borderRadius": {
+    "type": "slider",
+    "label": "Border Radius",
+    "value": 20,
+    "min": 0,
+    "max": 40,
+    "step": 1,
+    "group": "Appearance"
+  },
+  "textColor": {
+    "type": "colorpicker",
+    "label": "Text Color",
+    "value": "#4f3f46",
+    "group": "Appearance"
+  },
+  "usernameColor": {
+    "type": "colorpicker",
+    "label": "Username Color",
+    "value": "#b86b83",
+    "group": "Appearance"
+  },
+  "oreNameColor": {
+    "type": "colorpicker",
+    "label": "Ore Color",
+    "value": "#8f6f7f",
+    "group": "Appearance"
+  },
+  "showTwitchAvatar": {
+    "type": "checkbox",
+    "label": "Show Twitch Avatars",
+    "value": false,
+    "group": "Appearance"
+  },
+  "position": {
+    "type": "dropdown",
+    "label": "Position",
+    "value": "top-right",
+    "options": {
+      "top-left": "Top Left",
+      "top-center": "Top Center",
+      "top-right": "Top Right",
+      "center": "Center",
+      "bottom-left": "Bottom Left",
+      "bottom-center": "Bottom Center",
+      "bottom-right": "Bottom Right"
+    },
+    "group": "Notification"
+  },
+  "animationDuration": {
+    "type": "number",
+    "label": "Duration",
+    "value": 3200,
+    "min": 2200,
+    "max": 10000,
+    "step": 100,
+    "group": "Notification"
+  },
+  "mineCommand": {
+    "type": "text",
+    "label": "Mine Command",
+    "value": "!mine",
+    "group": "Commands"
+  },
+  "minerCommand": {
+    "type": "text",
+    "label": "Miner Command",
+    "value": "!miner",
+    "group": "Commands"
+  },
+  "topMinersCommand": {
+    "type": "text",
+    "label": "Top Miners Command",
+    "value": "!topminers",
+    "group": "Commands"
+  },
+  "resetMinerCommand": {
+    "type": "text",
+    "label": "Reset Miner Command",
+    "value": "!resetminer",
+    "group": "Commands"
+  },
+  "resetAllMinersCommand": {
+    "type": "text",
+    "label": "Reset All Miners Command",
+    "value": "!resetallminers",
+    "group": "Commands"
+  },
+  "mineOnCommand": {
+    "type": "text",
+    "label": "Mine On Command",
+    "value": "!mineon",
+    "group": "Commands"
+  },
+  "mineOffCommand": {
+    "type": "text",
+    "label": "Mine Off Command",
+    "value": "!mineoff",
+    "group": "Commands"
+  },
+  "stoneName": {
+    "type": "text",
+    "label": "Stone Name",
+    "value": "Stone",
+    "group": "Ore Names"
+  },
+  "ironName": {
+    "type": "text",
+    "label": "Iron Name",
+    "value": "Iron",
+    "group": "Ore Names"
+  },
+  "goldName": {
+    "type": "text",
+    "label": "Gold Name",
+    "value": "Gold",
+    "group": "Ore Names"
+  },
+  "diamondName": {
+    "type": "text",
+    "label": "Diamond Name",
+    "value": "Diamond",
+    "group": "Ore Names"
+  },
+  "mythrilName": {
+    "type": "text",
+    "label": "Mythril Name",
+    "value": "Mythril",
+    "group": "Ore Names"
+  },
+  "enableLeaderboard": {
+    "type": "checkbox",
+    "label": "Enable",
+    "value": false,
+    "group": "Leaderboard"
+  },
+  "permanentLeaderboard": {
+    "type": "checkbox",
+    "label": "Permanent",
+    "value": false,
+    "group": "Leaderboard"
+  },
+  "leaderboardSize": {
+    "type": "slider",
+    "label": "Size",
+    "value": 100,
+    "min": 60,
+    "max": 150,
+    "step": 1,
+    "group": "Leaderboard"
+  },
+  "leaderboardAmount": {
+    "type": "number",
+    "label": "Players",
+    "value": 5,
+    "min": 1,
+    "max": 20,
+    "step": 1,
+    "group": "Leaderboard"
+  },
+  "enableEvents": {
+    "type": "checkbox",
+    "label": "Enable Events",
+    "value": false,
+    "group": "Events"
+  },
+  "eventInterval": {
+    "type": "number",
+    "label": "Event Interval (minutes)",
+    "value": 30,
+    "min": 15,
+    "max": 1440,
+    "step": 1,
+    "group": "Events"
+  },
+  "eventDuration": {
+    "type": "number",
+    "label": "Event Duration (seconds)",
+    "value": 300,
+    "min": 60,
+    "max": 3600,
+    "step": 30,
+    "group": "Events"
+  },
+  "enableEventNotifications": {
+    "type": "checkbox",
+    "label": "Enable Event Notifications",
+    "value": true,
+    "group": "Events"
+  },
+  "crystalRushMessage": {
+    "type": "text",
+    "label": "Crystal Rush Message",
+    "value": "✨ Crystal Rush\nDiamond chance increased!",
+    "group": "Events"
+  },
+  "mythrilSurgeMessage": {
+    "type": "text",
+    "label": "Mythril Surge Message",
+    "value": "✨ Mythril Surge\nMythril chance increased!",
+    "group": "Events"
+  },
+  "luckyMiningMessage": {
+    "type": "text",
+    "label": "Lucky Mining Message",
+    "value": "✨ Lucky Mining\nBetter ores are more likely!",
+    "group": "Events"
+  },
+  "eventEndedMessage": {
+    "type": "text",
+    "label": "Event Ended Message",
+    "value": "{event}\nEnded",
+    "group": "Events"
+  },
+  "miningText": {
+    "type": "text",
+    "label": "Mining Text",
+    "value": "Mining...",
+    "group": "Text"
+  },
+  "resultText": {
+    "type": "text",
+    "label": "Result Text",
+    "value": "{user} mined",
+    "group": "Text"
+  },
+  "leaderboardTitle": {
+    "type": "text",
+    "label": "Leaderboard Title",
+    "value": "Top Miners",
+    "group": "Leaderboard"
+  },
+  "leaderboardEmptyText": {
+    "type": "text",
+    "label": "Empty Text",
+    "value": "No miners yet",
+    "group": "Leaderboard"
+  },
+  "pickaxeUrl": {
+    "type": "text",
+    "label": "Pickaxe URL",
+    "value": "https://github.com/domsondesign/widgets/blob/main/Mining/pickaxe.png?raw=true",
+    "group": "Assets"
+  },
+  "stoneUrl": {
+    "type": "text",
+    "label": "Stone URL",
+    "value": "https://github.com/domsondesign/widgets/blob/main/Mining/stone.png?raw=true",
+    "group": "Assets"
+  },
+  "ironUrl": {
+    "type": "text",
+    "label": "Iron URL",
+    "value": "https://github.com/domsondesign/widgets/blob/main/Mining/iron.png?raw=true",
+    "group": "Assets"
+  },
+  "goldUrl": {
+    "type": "text",
+    "label": "Gold URL",
+    "value": "https://github.com/domsondesign/widgets/blob/main/Mining/gold.png?raw=true",
+    "group": "Assets"
+  },
+  "diamondUrl": {
+    "type": "text",
+    "label": "Diamond URL",
+    "value": "https://github.com/domsondesign/widgets/blob/main/Mining/diamond.png?raw=true",
+    "group": "Assets"
+  },
+  "mythrilUrl": {
+    "type": "text",
+    "label": "Mythril URL",
+    "value": "https://github.com/domsondesign/widgets/blob/main/Mining/mythril.png?raw=true",
+    "group": "Assets"
+  },
+  "dustUrl": {
+    "type": "text",
+    "label": "Dust URL",
+    "value": "https://github.com/domsondesign/widgets/blob/main/Mining/dust%20puff.png?raw=true",
+    "group": "Assets"
+  },
+  "sparkleUrl": {
+    "type": "text",
+    "label": "Sparkle URL",
+    "value": "https://github.com/domsondesign/widgets/blob/main/Mining/magical%20sparkle.png?raw=true",
+    "group": "Assets"
+  },
+  "trophyUrl": {
+    "type": "text",
+    "label": "Trophy URL",
+    "value": "https://github.com/domsondesign/widgets/blob/main/Mining/trophy.png?raw=true",
+    "group": "Assets"
+  }
+}
